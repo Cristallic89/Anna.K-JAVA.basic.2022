@@ -1,5 +1,9 @@
 package week1;
 
 public class Ex1 {
-    System.out.println("Kristi Rajandu");
+    public static void main(String[] args) {
+        System.out.println("Hello\nKristi Rajandu!");
+    }
+
+}
 }
