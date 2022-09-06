@@ -6,4 +6,4 @@ public class Ex1 {
     }
 
 }
-}
+
