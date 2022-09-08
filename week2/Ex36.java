@@ -26,7 +26,7 @@ public class Ex36 {
         }
         System.out.println("Thank you and see you later!");
         System.out.println("The sum is " + sum);
-        System.out.print("How many numbers: " + count);
+        System.out.println("How many numbers: " + count);
         double averege = (double)sum / count;
         System.out.println("Average: " + averege);
         System.out.println("Even numbers: " + even);
