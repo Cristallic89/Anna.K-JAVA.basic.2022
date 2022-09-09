@@ -14,4 +14,9 @@ public class Ex72 {
         myAccount.deposit(100.0);
         System.out.println(myAccount);
     }
+
+    public static void transfer(Account from, Account to, double amount){
+        from.withdrawal(amount);
+        to.deposit(amount);
+    }
 }
