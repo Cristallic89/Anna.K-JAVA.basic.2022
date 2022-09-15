@@ -14,6 +14,7 @@ class Ex3 {
         System.out.println("Sisesta esimene number");
         number1 = input.nextDouble();
 
+
         System.out.println("Sisesta teine number");
         number2 = input.nextDouble();
 
