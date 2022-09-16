@@ -44,7 +44,7 @@ class Ex3 {
             case '/':
                 result = number1 / number2 / number3;
                 System.out.println(number1 + " / " + number2 + " +/ " + number3+ " = " + result);
-                break;-
+                break;
 
             default:
                 System.out.println("Midagi läks valesti. :(");
