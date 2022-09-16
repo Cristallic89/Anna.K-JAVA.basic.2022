@@ -20,11 +20,15 @@ public class Suitcase {
 
     @Override
     public String toString() {
-        int weightCurrent = this.totalWeight();
-        if(weightCurrent == 0) {
-            return "empty (" + weightCurrent + " kg)";
+        String languageControl = "";
+        if(this.things.size() == 0) {
+            languageControl =  "empty";
+        } else if (this.things.size() == 1) {
+            languageControl = this.things.size() + " thing";
+        } else {
+            languageControl = this.things.size() + " things";
         }
-        return this.things.size() + " things (" + weightCurrent + " kg)";
+        return languageControl + " (" + this.totalWeight() + " kg)";
     }
 
     public void printThings(){
@@ -39,5 +43,16 @@ public class Suitcase {
             weightCurrent += currentThing.getWeight();
         }
         return weightCurrent;
+    }
+
+    public Thing heaviestThing(){
+        Thing heavist = new Thing("", 0);
+        for (Thing thing : this.things) {
+            if (thing.getWeight() > heavist.getWeight()){
+                heavist = thing;
+            }
+        }
+        if(this.things.size() == 0) return null;
+        return heavist;
     }
 }
