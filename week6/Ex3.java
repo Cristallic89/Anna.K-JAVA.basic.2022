@@ -4,7 +4,7 @@ class Ex3 {
     public static void main(String[] args) {
 
         char operator;
-        Double number1, number2, result;
+        Double number1, number2, number3, result;
 
         Scanner input = new Scanner(System.in);
 
@@ -18,30 +18,33 @@ class Ex3 {
         System.out.println("Sisesta teine number");
         number2 = input.nextDouble();
 
+        System.out.println("Sisesta kolmas number");
+        number3 = input.nextDouble();
+
         switch (operator) {
 
             case '+':
-                result = number1 + number2;
-                System.out.println(number1 + " + " + number2 + " = " + result);
+                result = number1 + number2 + number3;
+                System.out.println(number1 + " + " + number2 + " + " + number3+ " = " + result);
                 break;
 
 
             case '-':
-                result = number1 - number2;
-                System.out.println(number1 + " - " + number2 + " = " + result);
+                result = number1 - number2 - number3;
+                System.out.println(number1 + " - " + number2 + " - " + number3+ " = " + result);
                 break;
 
 
             case '*':
-                result = number1 * number2;
-                System.out.println(number1 + " * " + number2 + " = " + result);
+                result = number1 * number2 * number3;
+                System.out.println(number1 + " * " + number2 + " * " + number3+ " = " + result);
                 break;
 
 
             case '/':
-                result = number1 / number2;
-                System.out.println(number1 + " / " + number2 + " = " + result);
-                break;
+                result = number1 / number2 / number3;
+                System.out.println(number1 + " / " + number2 + " +/ " + number3+ " = " + result);
+                break;-
 
             default:
                 System.out.println("Midagi läks valesti. :(");
