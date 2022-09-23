@@ -14,7 +14,7 @@ public class Item implements Thing, Comparable<Item> {
     }
 
     public int getItemVolume() {
-        return volume;
+        return this.volume;
     }
 
     @Override
